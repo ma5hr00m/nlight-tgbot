@@ -1,0 +1,9 @@
+[bot]
+debug=true
+timeout=60
+group_id=0000000000
+bot_token="0000000000:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+[juejin]
+uuid="0000000000000000000"
+session_id="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
