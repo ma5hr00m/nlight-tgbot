@@ -14,6 +14,11 @@ var Juejin struct {
 	SessionId string `toml:"session_id"`
 }
 
+var Blog struct {
+	Title string `toml:"title"`
+	URL   string `toml:"url"`
+}
+
 var configFile = "config.toml"
 
 func init() {
@@ -27,5 +32,9 @@ func init() {
 
 	if err = conf.Get("juejin").(*toml.Tree).Unmarshal(&Juejin); err != nil {
 		panic("mapping [juejin] section")
+	}
+
+	if err = conf.Get("blog").(*toml.Tree).Unmarshal(&Blog); err != nil {
+		panic("mapping [blog] section")
 	}
 }
